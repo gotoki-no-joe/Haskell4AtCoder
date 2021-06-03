@@ -41,12 +41,14 @@ $$N(N+1)/2 - \sum_{j=0}^N \textrm{query}(a_j)$$
 数えなくても持っているなら使えばよい。
 
 ```haskell
+-- @gotoki_no_joe
 numInversions :: Int -> [Int] -> Int
 numInversions ub as = sum $ loop 0 t0 as
   where
     t0 = makeFWT (replicate ub 0)
+    loop _ _ [] = []
     loop j t (aj:as) = j - queryFWT aj t :
-                       loop (succ j) (modifyFWT j 1 t) as
+                       loop (succ j) (modifyFWT aj 1 t) as
 ```
 
 こういう応用を考えると、サイズ指定初期値0のフェニック木を作る関数もあってもいいかもしれない。
@@ -54,6 +56,7 @@ numInversions ub as = sum $ loop 0 t0 as
 さて、一般に入力が自然数列でない場合も、「その要素が小さい方から何番目か」という背の順を付けてやれば、上のバージョンで扱える問題に落とし込める。上限は要素数である。
 
 ```haskell
+-- @gotoki_no_joe
 inject2nat :: Ord a => [a] -> [Int]
 inject2nat xs = map snd ijs
   where
@@ -64,6 +67,7 @@ inject2nat xs = map snd ijs
 後半はData.Arrayを使うほうが速いかも。
 
 ```haskell
+-- @gotoki_no_joe
 inject2nat :: Ord a => [a] -> [Int]
 inject2nat xs = elems ja
   where
@@ -76,6 +80,6 @@ inject2nat xs = elems ja
 
 yukicoder No.742 にゃんにゃんにゃん　猫の挨拶 - 【ACコード】  
 yukicoder No.1115 二つの数列 / Two Sequences - 【ACコード】  
-ABC190 F Shift and Inversions - 【ACコード】  
+ABC190F [ACコード](https://atcoder.jp/contests/abc190/submissions/23145183) 典型的な例題  
 ARC120 C Swaps 2 - 【ACコード】
 

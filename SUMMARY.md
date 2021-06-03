@@ -55,7 +55,7 @@
   * [27.ダイクストラ法](wta/27daikusutora.md)
   * [28.ワーシャルフロイド法](wta/warshall-floyd-algorithm.md)
   * [29.セグメント木](wta/segment-tree.md)
-  * [30.転倒数、あるいは反転数](wta/30aruiha.md)
+  * [30.転倒数、あるいは反転数](wta/num-inversions.md)
 * [蛇足](superfluous/README.md)
   * [フェニック木2](superfluous/fenikku2.md)
   * [最小値を取り出す疑似ヒープ](superfluous/handmade-priority-queue.md)
