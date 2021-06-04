@@ -146,3 +146,5 @@ writeFWT i v fwt = modifyFWT i (v-x) fwt
     x = queryFWT (succ i) fwt - queryFWT i fwt
 ```
 
+子がないことを`FWTNull`構成子で表していたところを、`undefined`で火遊びしている。
+
