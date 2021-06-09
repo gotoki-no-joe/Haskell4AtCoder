@@ -1,4 +1,4 @@
-# 3.約数列挙 \(4\)
+# 3.約数列挙 \(4\) \(Story\)
 
 1から順に割ってみて、割り切れたなら除数は小さい方の約数、商は大きい方の約数。  
 この作業は$$n$$に対して$$\sqrt n$$まで試せば終わるので、$$O(\sqrt n)$$で十分に速い。  
@@ -6,18 +6,18 @@ $$n$$が平方数のときに2度列挙しないように少し工夫してあ�
 
 ```haskell
 -- @gotoki_no_joe
-divisors :: Int -> [Int]
-divisors 1 = [1]
-divisors n = 1 : loop 2 [n]
+factors :: Int -> [Int]
+factors 1 = [1]
+factors n = 1 : loop 2 [n]
   where
     loop k us
       | k2 >  n =     us
       | k2 == n = k : us
-      | q == 0  = k : loop k1 (p:us)
-      | True    =     loop k1    us
+      | q  == 0 = k : next (p:us)
+      | True    =     next    us
       where
         (p,q) = divMod n k
-        k1 = succ k
+        next = loop (succ k)
         k2 = k * k
 ```
 
