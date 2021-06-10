@@ -1,4 +1,8 @@
-# はじめに
+---
+description: Algorithm (for competitive programming) Design in Haskell
+---
 
-快適なコーディングのできるHaskellを使ってAtCoder Beginners Contestでスコアを得るためのスニペットをまとめていこう。
+# Haskell for AtCoder
+
+快適なコーディングのできるHaskellを使ってAtCoder Beginners Contestでスコアを得るためのスニペットをまとめていく本。
 

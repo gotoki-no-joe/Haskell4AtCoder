@@ -4,12 +4,14 @@ description: ちゃんとO(1)な、整数添字のみの配列
 
 # Data.Vector
 
-モナド内でmutableなものについては別ページで説明予定
+同じインタフェースでUnboxedな（正格でより速い）ベクタを提供する`Data.Vector.Unboxed`もある。モナド版の関数については省略。`(//)`は$$O(m(n+m))$$なので使うとがっかりする。あくまでimmutableな対象。
 
-[https://hackage.haskell.org/package/vector-0.12.2.0/docs/Data-Vector.html](https://hackage.haskell.org/package/vector-0.12.2.0/docs/Data-Vector.html#g:36)
+[https://hackage.haskell.org/package/vector-0.12.2.0/docs/Data-Vector.html](https://hackage.haskell.org/package/vector-0.12.2.0/docs/Data-Vector.html)
 
 ```haskell
 import qualified Data.Vector as V
+
+import qualified Data.Vector.Unboxed as V
 ```
 
 ```haskell

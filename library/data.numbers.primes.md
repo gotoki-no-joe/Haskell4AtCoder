@@ -4,7 +4,7 @@ description: 素数に関する機能
 
 # Data.Numbers.Primes
 
-Project Eulerをするには欠かせない。
+Project Eulerをするには欠かせない。Haskell Platformには含まれない。
 
 [http://hackage.haskell.org/package/primes-0.2.1.0/docs/Data-Numbers-Primes.html](http://hackage.haskell.org/package/primes-0.2.1.0/docs/Data-Numbers-Primes.html)
 
