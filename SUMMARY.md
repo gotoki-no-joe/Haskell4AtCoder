@@ -34,6 +34,7 @@
   * [Data.Function](library/data.function.md)
   * [Data.Numbers.Primes](library/data.numbers.primes.md)
   * [Data.Bits](library/data.bits.md)
+  * [Data.Sequence](library/data.sequence.md)
 * [ToDo:](todo.md)
 * [AtCoder Library](atcoder-library/README.md)
   * [セグメント木](atcoder-library/segment-tree.md)
