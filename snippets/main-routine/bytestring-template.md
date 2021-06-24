@@ -32,7 +32,7 @@ main = do
 -- 結果がYes/Noのとき
   putStrLn $ if ans then "Yes" else "No"
 -- 1行に空白区切りで出力するとき
-  putStrLn $ ($ "") $ foldr1 (.) $ intersperse (' ' :) $ map shows ans
+  putStrLn $ foldr ($) "" $ intersperse (' ' :) $ map shows ans
 -- 1つ1行で出力するとき
   mapM_ print ans
 

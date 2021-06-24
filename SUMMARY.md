@@ -54,7 +54,7 @@
   * [12.カウンター \(2\)](wta/12kaunt-2.md)
   * [13.ModInt + 14.逆元 \(in progress\)](wta/13.modint.md)
   * [15.階乗](wta/15.factorial.md)
-  * [16.組み合わせの場合の数](wta/16.combination.md)
+  * [16.組み合わせの場合の数 \(need update\)](wta/16.combination.md)
   * [17.べき乗 \(not yet\)](wta/17.power.md)
   * [18.最大公約数、最小公倍数](wta/18.gcd-lcm.md)
   * [19.中国剰余定理 \(not yet\)](wta/19.crt.md)

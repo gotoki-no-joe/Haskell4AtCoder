@@ -28,6 +28,8 @@ main = do
   putStrLn $ if ans then "Yes" else "No"
 -- 1行に空白区切りで出力するとき
   putStrLn $ unwords $ map show ans
+  putStrLn $ foldr ($) "" $ intersperse (' ' :) $ map shows ans
+-- ↑ Data.Listが必要
 -- 1つ1行で出力するとき
   mapM_ print ans
 
