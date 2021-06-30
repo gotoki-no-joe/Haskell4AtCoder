@@ -1,4 +1,4 @@
-# 2.切り上げ除算 \(1\) \(Story\)
+# 2.切り上げ除算 \(Story\)
 
 完成品は[こちら](../snippets/integers/divrup.md)に。
 
@@ -30,5 +30,5 @@ divrup a b = div (a+b-1) b
 
 ABC176A [ACコード](https://atcoder.jp/contests/abc176/submissions/22555330)  
 ABC195B [ACコード](https://atcoder.jp/contests/abc195/submissions/22556731)  
-ABC046C \(まだ解けていない\)
+ABC046C [ACコード](https://atcoder.jp/contests/abc046/submissions/23709081)
 

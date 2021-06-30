@@ -52,7 +52,7 @@ counts ub xs = V.accum (+) v0 $ zip xs $ repeat 1
 
 ## リストに出現する要素の種類数を数えたい
 
-`Data.Map`の対域がない変種 `Data.Set`で重複を無視できる。
+`Data.Map`の値域がない変種 `Data.Set`で重複を無視できる。
 
 ```haskell
 import qualified Data.Set as S

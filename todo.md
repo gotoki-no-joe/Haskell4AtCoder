@@ -1,6 +1,6 @@
 # ToDo:
 
-[剰余演算](snippets/shu-xue/modulo.md) のページに、モジュラ逆数を求めるための拡張ユークリッド互除法のsnippetが必要
+[剰余演算](snippets/integers/modulo.md) のページに、モジュラ逆数を求めるための拡張ユークリッド互除法のsnippetが必要
 
 ライブラリの章
 

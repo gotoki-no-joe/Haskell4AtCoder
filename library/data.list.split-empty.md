@@ -1,4 +1,6 @@
-# Data.List.Split \(empty\)
+# Data.List.Split
+
+Haskell Platformには含まれないが、時々便利。
 
 [https://hackage.haskell.org/package/split-0.2.3.3/docs/Data-List-Split.html](https://hackage.haskell.org/package/split-0.2.3.3/docs/Data-List-Split.html)
 

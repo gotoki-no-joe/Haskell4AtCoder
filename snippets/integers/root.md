@@ -5,6 +5,7 @@
 $$N$$に対して$$k^2=N$$のとき`Right k`、 $$k^2 < N \land N < (k+1)^2$$のとき`Left k`を返す。
 
 ```haskell
+-- @gotoki_no_joe
 intSqrt n
   | n < 0 = error "Negative Sqrt"
 intSqrt 0 = Right 0
