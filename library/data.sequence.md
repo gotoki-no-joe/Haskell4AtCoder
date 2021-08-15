@@ -99,7 +99,7 @@ sortBy :: (a -> a -> Ordering) -> Seq a -> Seq a
 sortOn :: Ord b => (a -> b) -> Seq a -> Seq a
 ```
 
-全て$$O(n \log n)$$。少し軽い`unstable～`という版がある。
+全て$$O(n \log n)$$
 
 ### 添字
 

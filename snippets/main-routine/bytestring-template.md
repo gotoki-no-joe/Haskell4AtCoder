@@ -4,8 +4,7 @@ description: 'template for main, fast read by ByteString'
 
 # ByteStringテンプレート
 
-基本テンプレートと同じことができるByteString版のテンプレート  
-入力データが大きい場合、読み込み時間がかなり節約される。
+### コード
 
 ```haskell
 import qualified Data.ByteString.Char8 as BS
@@ -40,5 +39,9 @@ compute :: Int -> [Int] -> [[Int]] -> [Int Bool]
 compute n as xys =
 ```
 
+### もっと説明
 
+使い方は[基本テンプレート](basic-template.md)とほぼ同様。
+
+入力データが大きい場合、読み込み時間がかなり節約される。
 

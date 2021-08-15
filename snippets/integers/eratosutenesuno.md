@@ -1,9 +1,6 @@
 # 素数（エラトステネスの篩）
 
-出典：あのアルゴリズムはどこ？の5
-
-無限リストとして昇順に素数が取り出せる。  
-内部で[優先度付きキューのInt版](../../routines/priority-queue.md#int-te-hua-ban)を利用している。
+### コード
 
 ```haskell
 -- @gotoki_no_joe
@@ -21,4 +18,23 @@ primes = 2 : 3 : sieve q0 [5,7..]
         queue1 = insertIQ (np+p) p $ deleteIQ queue
         queue2 = insertIQ (x+x)  x queue
 ```
+
+### 説明
+
+無限リストとして昇順に素数が取り出せる。  
+内部で[優先度付きキューのInt版](../../routines/priority-queue.md#int-te-hua-ban)を利用しており、そちらも入れる必要がある。
+
+## お話
+
+あのアルゴリズムはどこ？の5 より。
+
+必要なものは`Data.Numbers.Primes`に全て揃っているので、Project Eulerをするなら[そちら](../../library/data.numbers.primes.md)を使ったほうがよい。AtCoderにはこのライブラリがないので[自作する](eratosutenesuno.md)必要がある。
+
+[最終版に至るまでのお話](../../story/eratosutenesuno.md)を別にまとめた。
+
+### 関連問題
+
+天下一プログラマーコンテスト2012 予選C A [ACコード](https://atcoder.jp/contests/tenka1-2012-qualC/submissions/22739024)  
+ABC149C [ACコード](https://atcoder.jp/contests/abc149/submissions/22738962)  
+\(expert!\) ABC170 D 
 

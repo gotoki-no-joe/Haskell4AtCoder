@@ -4,7 +4,7 @@ description: basic template for main
 
 # 基本テンプレート
 
-言語を自由に選択できるように、独立したプログラムであることが求められる。つまり、計算に必要なデータを標準入力の文字列から取り込むこと、計算結果を文字で標準出力に送り出すことである。HaskellだとそのためにはIOモナドを扱う必要がある。
+### コード
 
 ```haskell
 main = do
@@ -28,8 +28,8 @@ main = do
   putStrLn $ if ans then "Yes" else "No"
 -- 1行に空白区切りで出力するとき
   putStrLn $ unwords $ map show ans
+-- ↑の高速版、Data.Listが必要
   putStrLn $ foldr ($) "" $ intersperse (' ' :) $ map shows ans
--- ↑ Data.Listが必要
 -- 1つ1行で出力するとき
   mapM_ print ans
 
@@ -37,9 +37,22 @@ compute :: Int -> [Int] -> [[Int]] -> [Int Bool]
 compute n a b c xys =
 ```
 
-とりあえずこれがあれば動くというテンプレート。  
-`compute`の型を宣言することで`read`の型を固定する。  
+### 説明
+
+入力するデータ量が少ない場合のための、Stringを用いた基本部分。  
+コピペして、問題の形式に合わせて読み込み部をトリミングし、出力部を選ぶ。
+
+`compute`の型を宣言することで`read`の型を固定する。
+
 AtCoderでときどきある、"Yes"か"No"を出力するタイプの問題は、Boolで返して19行めを使う。
 
-HaskellのString型は重いため、入力データがある程度を超えると読み込み時間がネックになる。同等に使える[ByteStringで読み込む版](bytestring-template.md)を用意した。
+### もっと説明
+
+とりあえずこれがあれば動くというテンプレート。
+
+競技プログラミングは参加者が言語を自由に選択できるようにするため、作成するプログラムは自立する必要がある。つまり、計算に必要なデータを標準入力の文字列から取り込み、計算結果を文字で標準出力に送り出すことができなくてはならない。
+
+HaskellでそれをするにはIOモナドを扱う必要がある。このスニペットはそのあたりの面倒を処理するボイラプレートのテンプレートである。
+
+HaskellのString型は重いため、入力データがある程度を超えると読み込み時間がネックになる。このスニペットと同等に使える[ByteStringで読み込む版](bytestring-template.md)を用意した。
 
