@@ -28,29 +28,3 @@ partition :: (a -> Bool) -> [a] -> ([a], [a])
 sortOn :: Ord b => (a -> b) -> [a] -> [a]
 ```
 
-本当はTraversableだけどリストに特化して解釈
-
-```haskell
-mapAccumL :: (a -> b -> (a, c)) -> a -> [b] -> (a, [c])
-mapAccumL f s []     = (s, [])
-mapAccumL f s (x:xs) = (u, y:ys)
-  where (t, y ) = f s x
-        (u, ys) = mapAccumL f t xs
-```
-
-状態`s`と入力列`[x]`から状態遷移を繰り返し、同時に出力列`[y]`も生成する、状態遷移機械の一般化。今までこれを知らずに下のようにしていた。
-
-```haskell
-map snd $ tail $ scanl (step . fst) (s,(unused value)) xs
-```
-
-LがあるならRもある。が、こちらはどう解釈したものか。
-
-```haskell
-mapAccumR :: (a -> b -> (a, c)) -> a -> [b] -> (a, [c])
-mapAccumR f s []     = (s, [])
-mapAccumR f s (x:xs) = (u, y:ys)
-  where (t, ys) = mapAccumR f s xs
-        (u, y ) = f t x
-```
-

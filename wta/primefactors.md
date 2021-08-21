@@ -32,3 +32,19 @@ ABC152E \(Intの範囲でやろうとするとTLEになってしまう。Integer
 * 整数平方根も使えば、毎回 n &lt; f\*f を計算しないで済む。
 * 素数リストがあれば、奇数を全て試さなくても済む。
 
+素数リストを使う版
+
+```haskell
+-- @gotoki_no_joe
+primeFactors :: Int -> [Int]
+primeFactors n = loop n primes
+  where
+    loop 1 _ = []
+    loop n pps@(p:ps)
+      | n < p * p = [n]
+      | otherwise =
+          case divMod n p of
+            (m, 0) -> p : loop m pps
+            _      ->     loop n  ps
+```
+
