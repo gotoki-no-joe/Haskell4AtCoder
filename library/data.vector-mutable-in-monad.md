@@ -9,9 +9,9 @@ description: 命令型言語の配列そのもの。整数添字でmutable
 [https://hackage.haskell.org/package/vector-0.12.3.0/docs/Data-Vector-Mutable.html](https://hackage.haskell.org/package/vector-0.12.3.0/docs/Data-Vector-Mutable.html)
 
 ```haskell
-import Data.Vector.Mutable as MV
+import qualified Data.Vector.Mutable as MV
 
-import Data.Vector.Unboxed.Mutable as MV
+import qualified Data.Vector.Unboxed.Mutable as MV
 ```
 
 ```haskell
