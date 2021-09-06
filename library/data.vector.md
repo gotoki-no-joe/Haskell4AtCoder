@@ -93,6 +93,24 @@ V.iterateN n f x = fromList $ take n $ iterate f x
 V.unfoldr :: (b -> Maybe (a, b)) -> b -> Vector a
 ```
 
+#### Data.Array.accumArray的な
+
+```haskell
+V.create :: (forall s. ST s (MVector s a)) -> Vector a
+```
+
+Mutable Vectorを作るアクションを実行して、最終結果のImmutable Vectorをpureに得る関数。例えば下のようにして、エラトステネスの篩を実行できる。
+
+```haskell
+primev = V.create (do
+  v <- MV.replicate (n+1) True
+  forM_ [2..n] (\i -> do
+    f <- MV.read v i
+    when f (forM_ [i*2,i*3..n] (\j -> MV.write v j False)))
+  return v
+  )
+```
+
 #### 他の値へ変換
 
 ```haskell
