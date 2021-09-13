@@ -14,7 +14,7 @@ binary_search :: (Int -> Bool) -> Int -> Int -> (Int, Int)
 binary_search prop unsat sat = loop unsat sat
   where
     loop a b
-      | ende   = a
+      | ende   = (a, b)
       | prop m = loop a m
       | True   = loop m b
       where
