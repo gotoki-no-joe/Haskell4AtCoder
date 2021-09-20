@@ -91,4 +91,5 @@
 
 * [木を扱う](kikake/wou.md)
 * [座標変換](kikake/zuo-biao-bian-huan.md)
+* [はじめからVectorに読み込む](kikake/hajimekaravectornimimu.md)
 
