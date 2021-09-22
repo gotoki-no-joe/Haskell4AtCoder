@@ -93,4 +93,5 @@
 * [座標変換](kikake/zuo-biao-bian-huan.md)
 * [はじめからVectorに読み込む](kikake/hajimekaravectornimimu.md)
 * [トライ木](kikake/torai.md)
+* [べき乗](kikake/beki.md)
 
