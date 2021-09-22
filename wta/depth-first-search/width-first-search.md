@@ -39,3 +39,19 @@ bfs f i = xs
 ABC161D [ACコード](https://atcoder.jp/contests/abc161/submissions/22951386) 無理に上のbfsを使ったが、状態は無限に増えるのでキューの長さ処理は確認できていない。  
 ABC114C [ACコード](https://atcoder.jp/contests/abc114/submissions/22955437) 単純にdfsをbfsに差し替えた。枝刈りも機能していると確認できた。
 
+### 続き
+
+ここまでして結局 `(++)` の呪縛から逃れられないなら、素直にやった方がいい気がする。
+
+```haskell
+import qualified Data.Sequence as Q
+
+bfs2 :: (s -> ([x],[s])) -> s -> [x]
+bfs2 f i = loop $ Q.singleton i
+  where
+    loop (Q.Empty) = []
+    loop (s Q.:<| q) = xs ++ loop (foldl (Q.|>) q ss)
+      where
+        (xs,ss) = f s
+```
+

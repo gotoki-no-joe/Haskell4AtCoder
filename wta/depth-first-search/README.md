@@ -35,3 +35,41 @@ ABC196 D Hanjo - 【ACコード】
 ほかに  
 ABC203C [ACコード](https://atcoder.jp/contests/abc203/submissions/23390004)
 
+### 続き
+
+探索する必要のある状態をリストで管理しているところで `(++)` を使うのがやはり気になる。普通に再帰呼び出しで探索するとこうなる。
+
+```haskell
+dfs f i = loop i
+  where
+    loop x = rs ++ concatMap loop ys
+      where
+        (rs,ys) = f x
+```
+
+`concatMap`が現れて事態が悪化した。いつもの変形で `(++)` を除去すると
+
+```haskell
+dfs f i = loop i []
+  where
+    loop x rest = rs ++ foldr loop rest ys
+      where
+        (rs,ys) = f x
+```
+
+`concatMap` だけは除去できたが、もともと内部ではこうなってないか？
+
+一つの状態からは一つの成功または次状態リストのみが生成される、と限定できれば、
+
+```haskell
+dfs :: (s -> Either x [s]) -> s -> [x]
+dfs f i = loop i []
+  where
+    loop i rest =
+      case f i of
+        Left  r  -> r : rest
+        Right ys -> foldr loop rest ys
+```
+
+として `(++)` を完全に除去できるが、幅優先探索の実装へはつながりにくくなる。
+
