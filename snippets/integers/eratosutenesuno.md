@@ -36,5 +36,5 @@ primes = 2 : 3 : sieve q0 [5,7..]
 
 天下一プログラマーコンテスト2012 予選C A [ACコード](https://atcoder.jp/contests/tenka1-2012-qualC/submissions/22739024)  
 ABC149C [ACコード](https://atcoder.jp/contests/abc149/submissions/22738962)  
-\(expert!\) ABC170 D 
+ABC170D もう一方のページで解けた。が。
 

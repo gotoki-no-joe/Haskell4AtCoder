@@ -28,4 +28,5 @@ do
 
 * ABC128C \([ACコード](https://atcoder.jp/contests/abc128/submissions/26050877)\)
 * ABC147C \([ACコード](https://atcoder.jp/contests/abc147/submissions/8879426)\)
+* ABC119C \([ACコード](https://atcoder.jp/contests/abc119/submissions/26061046)\) 2^n通りでなく4^n通りという派生形
 

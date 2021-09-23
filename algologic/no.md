@@ -32,4 +32,6 @@ perms xs = [y:zs | (y,ys) <- one [] xs, zs <- perms ys]
 ```
 
 * ABC054C \([ACコード](https://atcoder.jp/contests/abc054/submissions/26051432)\) この問題をこの文脈に置くのはテクニカルな印象がある。グラフを深さ優先探索で普通にたどる版の[ACコード](https://atcoder.jp/contests/abc054/submissions/26051537)も示しておく。
+* ABC145C \([ACコード](https://atcoder.jp/contests/abc145/submissions/26052138)\) 対象が大した数ではないので素朴に計算するこの方法でもよいが、数学的直観を働かせると、Nが膨大になっても[高速に計算するやり方](https://atcoder.jp/contests/abc145/submissions/19201117)がある。
+* ABC150C \([ACコード](https://atcoder.jp/contests/abc150/submissions/26052183)\) 辞書順に生成して、何番目に出てきたかを数える。しかしもっと[直接的にそれらが何番目かを求める方法](https://atcoder.jp/contests/abc150/submissions/14216099)なら、対象が多くても高速に求められる。
 
