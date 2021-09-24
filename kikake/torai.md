@@ -10,7 +10,7 @@ data Trie a = Trie Bool (M.Map a Trie)
 
 -- 空の木
 emptyTrie :: Trie a
-emptyTrie = Trie False IM.empty
+emptyTrie = Trie False M.empty
 
 -- 語を登録
 insertTrie :: Ord a => [a] -> Trie a -> Trie a
