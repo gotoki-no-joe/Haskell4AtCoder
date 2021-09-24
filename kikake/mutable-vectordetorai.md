@@ -1,0 +1,4 @@
+# Mutable Vectorでトライ木
+
+Vectorの要素数と、語のアルファベットをVectorのindexに直す関数、戻す関数を付加してAbstract Datatypeとして作ることになる感じか。それをすると、部分木全てにそれらを教えておかないといけなくないか。
+
