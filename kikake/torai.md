@@ -6,7 +6,7 @@
 import qualified Data.Map as M
 
 -- @gotoki_no_joe
-data Trie a = Trie Bool (M.Map a Trie)
+data Trie a = Trie Bool (M.Map a (Trie a))
 
 -- 空の木
 emptyTrie :: Trie a
