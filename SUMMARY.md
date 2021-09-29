@@ -52,6 +52,7 @@
   * [最大公約数](algologic/zui-da-gong-yao-shu.md)
   * [最小公倍数](algologic/zui-xiao-gong-bei-shu.md)
   * [繰り返しによるべき乗](algologic/rishiniyorubeki.md)
+  * [nCk mod P とモジュロの逆元](algologic/nck-mod-p-tomojurono.md)
 * [あのアルゴリズムはどこ？](wta/README.md)
   * [4.素因数分解（試し割り法）\(1\)](wta/primefactors.md)
   * [6.総当り \(BIT全探索\) \(5\)](wta/binaryexhaustive.md)
