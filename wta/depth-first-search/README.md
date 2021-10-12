@@ -24,15 +24,15 @@ dfs f i = loop [i]
 
 ### 関連問題
 
-ABC114C [ACコード](https://atcoder.jp/contests/abc114/submissions/22947417)  
-ABC161D [ACコード](https://atcoder.jp/contests/abc161/submissions/11538255) 元記事ではDFSした結果をsortしてk番目を取り出しているが、リンクのようにBFS\(?\)すれば最初から昇順になるので例として適切さが見劣りする  
-ABC165C [ACコード](https://atcoder.jp/contests/abc165/submissions/12627062) 探索空間が初めから既知かつ刈る枝もないので、単なるgenerate&testになっている  
-パナソニックプログラミングコンテストD [ACコード](https://atcoder.jp/contests/panasonic2020/submissions/22948106)  
-ABC119 C Synthetic Kadomatsu - 【ACコード】  
-ABC198 E Unique Color - 【ACコード】  
+ABC114C [ACコード](https://atcoder.jp/contests/abc114/submissions/22947417)\
+ABC161D [ACコード](https://atcoder.jp/contests/abc161/submissions/11538255) 元記事ではDFSした結果をsortしてk番目を取り出しているが、リンクのようにBFS(?)すれば最初から昇順になるので例として適切さが見劣りする\
+ABC165C [ACコード](https://atcoder.jp/contests/abc165/submissions/12627062) 探索空間が初めから既知かつ刈る枝もないので、単なるgenerate\&testになっている\
+パナソニックプログラミングコンテストD [ACコード](https://atcoder.jp/contests/panasonic2020/submissions/22948106)\
+ABC119 C Synthetic Kadomatsu - 【ACコード】\
+ABC198 E Unique Color - 【ACコード】\
 ABC196 D Hanjo - 【ACコード】
 
-ほかに  
+ほかに\
 ABC203C [ACコード](https://atcoder.jp/contests/abc203/submissions/23390004)
 
 ### 続き
@@ -72,4 +72,3 @@ dfs f i = loop i []
 ```
 
 として `(++)` を完全に除去できるが、幅優先探索の実装へはつながりにくくなる。
-

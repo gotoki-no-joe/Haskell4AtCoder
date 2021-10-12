@@ -1,4 +1,4 @@
-# 6.総当り \(BIT全探索\) \(5\)
+# 6.総当り (BIT全探索) (5)
 
 ### 英語でなんて言うの？
 
@@ -28,12 +28,11 @@ bitSearch f ini = foldl step [ini]
 
 ### 関連問題
 
-ABC167C [ACコード](https://atcoder.jp/contests/abc167/submissions/22739273) bitSearch  
-ABC182C [ACコード](https://atcoder.jp/contests/abc182/submissions/22739342) bitSearch この問題は[より特化した別解](https://atcoder.jp/contests/abc182/submissions/18003556)がある  
-ABC190C [ACコード](https://atcoder.jp/contests/abc190/submissions/22739391) exhaustiveSearch  
-ARC114A  
-ABC197C  
-ABC128C  
-ABC147C  
+ABC167C [ACコード](https://atcoder.jp/contests/abc167/submissions/22739273) bitSearch\
+ABC182C [ACコード](https://atcoder.jp/contests/abc182/submissions/22739342) bitSearch この問題は[より特化した別解](https://atcoder.jp/contests/abc182/submissions/18003556)がある\
+ABC190C [ACコード](https://atcoder.jp/contests/abc190/submissions/22739391) exhaustiveSearch\
+ARC114A\
+ABC197C\
+ABC128C\
+ABC147C\
 ABC104C
-

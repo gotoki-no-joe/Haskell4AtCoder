@@ -21,7 +21,7 @@ primes = 2 : 3 : sieve q0 [5,7..]
 
 ### 説明
 
-無限リストとして昇順に素数が取り出せる。  
+無限リストとして昇順に素数が取り出せる。\
 内部で[優先度付きキューのInt版](../../routines/priority-queue.md#int-te-hua-ban)を利用しており、そちらも入れる必要がある。
 
 ## お話
@@ -34,7 +34,6 @@ primes = 2 : 3 : sieve q0 [5,7..]
 
 ### 関連問題
 
-天下一プログラマーコンテスト2012 予選C A [ACコード](https://atcoder.jp/contests/tenka1-2012-qualC/submissions/22739024)  
-ABC149C [ACコード](https://atcoder.jp/contests/abc149/submissions/22738962)  
+天下一プログラマーコンテスト2012 予選C A [ACコード](https://atcoder.jp/contests/tenka1-2012-qualC/submissions/22739024)\
+ABC149C [ACコード](https://atcoder.jp/contests/abc149/submissions/22738962)\
 ABC170D もう一方のページで解けた。が。
-
