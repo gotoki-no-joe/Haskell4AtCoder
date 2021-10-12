@@ -56,3 +56,7 @@ step ws (v:w:_) = force ws1
     (as,bs) = splitAt v ws
     ws1 = as ++ zipWith max bs (map (w +) ws)
 ```
+
+しかしこのコードは、wmaxが大きいときに長大なリストを扱うことになり、時間がかかる。ABC032Dではサブタスク2しか取れない。
+
+[https://atcoder.jp/contests/abc032/submissions/26517502](https://atcoder.jp/contests/abc032/submissions/26517502)
