@@ -120,3 +120,4 @@
 * [Mutable Vectorでトライ木](kikake/mutable-vectordetorai.md)
 * [べき乗](kikake/beki.md)
 * [ナップザック問題(無限個,整数)](kikake/nappuzakku.md)
+* [RoseTreeに幅優先順で番号を付ける](kikake/rosetreenidewokeru.md)
