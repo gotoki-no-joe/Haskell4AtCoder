@@ -1,5 +1,9 @@
 # Control.Monad
 
+```haskell
+import Control.Monad
+```
+
 
 
 ```haskell
@@ -44,4 +48,3 @@ ex)
 ```haskell
 when :: Applicative f => Bool -> f () -> f ()
 ```
-
