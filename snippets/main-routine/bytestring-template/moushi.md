@@ -54,6 +54,7 @@ getInt = do
 
 -- 複数の整数からなる行
 getInts :: IO [Int]
+getInts = do
   li <- BS.getLine
   return $ unfoldr (BS.readInt . BS.dropWhile isSpace) li
 
