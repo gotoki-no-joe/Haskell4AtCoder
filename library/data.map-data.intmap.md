@@ -2,7 +2,7 @@
 description: 数学の写像、いわゆる連想配列（ただしimmutable）
 ---
 
-# Data.Map, Data.IntMap \(part\)
+# Data.Map, Data.IntMap (part)
 
 ```haskell
 import qualified Data.Map as M
@@ -37,6 +37,17 @@ IM.fromListWith :: (a -> a -> a) -> [(Int,a)] -> IntMap a
 M.fromListWithKey :: Ord k => (k -> a -> a -> a) -> [(k,a)] -> Map k a
 IM.fromListWithKey :: (Int -> a -> a -> a) -> [(Int,a)] -> IntMap a
 ```
+
+対応づく要素全てをリストで持つとき：
+
+```haskell
+-- 正しい
+M.fromListWith (++) [(key,[val]) | (key,val) <- kvs]
+-- まちがい（とても遅くなる）
+M.fromListWith (flip (++)) ...
+```
+
+​
 
 #### 写像の変更
 
@@ -91,4 +102,3 @@ IM.size :: IntMap a -> Int
 ```
 
 これ以上は使った実績があったら追加することにしよう。toList くらいは必須か。
-
