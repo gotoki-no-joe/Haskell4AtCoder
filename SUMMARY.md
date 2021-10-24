@@ -123,3 +123,4 @@
 * [ナップザック問題(無限個,整数)](kikake/nappuzakku.md)
 * [RoseTreeに幅優先順で番号を付ける](kikake/rosetreenidewokeru.md)
 * [AtCoderのテストケース](kikake/atcodernotesutoksu.md)
+* [二分探索で要素数](kikake/de.md)
