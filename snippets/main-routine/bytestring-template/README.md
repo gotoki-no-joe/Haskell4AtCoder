@@ -39,7 +39,7 @@ compute :: Int -> [Int] -> [[Int]] -> [Int Bool]
 compute n as xys =
 ```
 
-使い方は[基本テンプレート](../basic-template.md)に準ずる。
+使い方は[基本テンプレート](../basic-template/)に準ずる。
 
 ### もっと説明
 
