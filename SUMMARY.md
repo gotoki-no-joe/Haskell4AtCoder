@@ -4,6 +4,7 @@
 * [スニペットまとめ](snippets/README.md)
   * [メインルーチン](snippets/main-routine/README.md)
     * [基本テンプレート](snippets/main-routine/basic-template/README.md)
+      * [説明](snippets/main-routine/basic-template/shuo-ming.md)
       * [Applicative使うやり方](snippets/main-routine/basic-template/applicativeuyari.md)
     * [ByteStringテンプレート](snippets/main-routine/bytestring-template/README.md)
       * [もう少し関数化](snippets/main-routine/bytestring-template/moushi.md)
